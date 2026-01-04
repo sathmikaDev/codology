@@ -153,16 +153,16 @@ export default function Home() {
         } relative overflow-hidden bg-white`}
       >
         <div className="flex flex-col lg:flex-row h-full items-stretch">
-          <div className="w-full lg:w-1/2 h-full flex justify-end items-center bg-white px-6 lg:px-16 xl:px-24 md:py-20 py-16">
-            <div className="max-w-xl">
+          <div className="w-full lg:w-1/2 h-full flex justify-center lg:justify-end items-center bg-white px-6 lg:px-16 xl:px-24 md:py-20 py-16">
+            <div className="max-w-xl space-y-6">
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
-                className="inline-flex items-center gap-2 px-4 py-2 bg-[#7E9CFC]/10 rounded-md"
+                className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-yellow-300/50 to-lime-300/50 rounded-full"
               >
-                <Sparkles className="w-4 h-4 text-[#7E9CFC]" />
-                <span className="text-sm font-medium text-[#040813]">
+                <Sparkles className="w-4 h-4 text-dark" />
+                <span className="text-sm font-medium text-dark">
                   Modern Software Solutions
                 </span>
               </motion.div>
@@ -171,9 +171,8 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
-                className="my-8"
               >
-                <h1 className="font-['Plus_Jakarta_Sans'] text-5xl md:text-6xl font-bold leading-tight text-[#040813]">
+                <h1 className="font-['Plus_Jakarta_Sans'] text-4xl md:text-5xl font-bold leading-tight text-dark">
                   Crafting Digital Experiences{" "}
                   <span className="text-[#7E9CFC]">That Define the Future</span>
                 </h1>
@@ -183,7 +182,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.4, duration: 0.5 }}
-                className="text-lg md:text-xl text-[#040813]/70 max-w-lg my-8"
+                className="text-lg text-[#040813]/70 max-w-lg"
               >
                 We craft exceptional digital experiences that transform ideas
                 into powerful, scalable applications.
@@ -193,7 +192,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.6, duration: 0.5 }}
-                className="flex gap-4"
+                className="flex gap-4 mt-12"
               >
                 <Link href="/contact">
                   <ButtonV2 text="Book a Call" />
