@@ -146,7 +146,7 @@ export default function AboutPage() {
       </section>
 
       {/* Story Section */}
-      <Section background="surface">
+      <Section background="white">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <ScrollReveal>
             <div>
@@ -261,7 +261,7 @@ export default function AboutPage() {
       </Section>
 
       {/* Timeline Section */}
-      <Section background="surface">
+      <Section background="white">
         <ScrollReveal>
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 bg-[#E0D9FF]/50 rounded-md text-sm font-medium text-primary mb-4">
@@ -281,14 +281,12 @@ export default function AboutPage() {
             {milestones.map((milestone, index) => (
               <ScrollReveal key={milestone.year} delay={index * 0.1}>
                 <div
-                  className={`flex items-center gap-8 md:gap-16 ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  }`}
+                  className={`flex items-center gap-8 md:gap-16 ${index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
+                    }`}
                 >
                   <div
-                    className={`flex-1 ${
-                      index % 2 === 0 ? "md:text-right" : "md:text-left"
-                    }`}
+                    className={`flex-1 ${index % 2 === 0 ? "md:text-right" : "md:text-left"
+                      }`}
                   >
                     <div className="bg-white rounded-2xl p-6 shadow-[0_4px_20px_rgba(59,40,204,0.06)]">
                       <div className="text-2xl font-bold text-primary mb-2">
@@ -355,7 +353,7 @@ export default function AboutPage() {
       </Section>
 
       {/* CTA Section */}
-      <Section background="surface">
+      <Section background="white">
         <ScrollReveal>
           <div className="bg-gradient-to-br from-primary to-[#7c3aed] rounded-3xl p-12 md:p-16 text-center text-white relative overflow-hidden">
             <div className="absolute top-0 right-0 w-64 h-64 bg-white/10 rounded-md blur-3xl -translate-y-1/2 translate-x-1/2" />
