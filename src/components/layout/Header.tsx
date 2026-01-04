@@ -7,6 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 import { useBanner } from "@/context/BannerContext";
 import "../../../public/codology-02.png";
+import ButtonV2 from "../ui/ButtonV2";
 
 const navLinks = [
   { href: "/", label: "Home" },
@@ -38,12 +39,10 @@ export default function Header() {
   return (
     <>
       <header
-        className={`fixed ${
+        className={`fixed border-b border-[#040813]/10 ${
           isBannerVisible ? "top-14" : "top-0"
         } left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled
-            ? "py-3 bg-white border-b border-[#040813]/10"
-            : "py-5 bg-white"
+          isScrolled ? "py-3 bg-white" : "py-5 bg-white"
         }`}
       >
         <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -78,9 +77,10 @@ export default function Header() {
 
           <div className="hidden md:block">
             <Link href="/contact">
-              <button className="px-6 py-3 bg-[#7E9CFC] text-white text-sm font-medium rounded-md hover:opacity-90 transition-opacity">
+              {/* <button className="px-6 py-3 bg-dark text-white text-sm font-medium rounded-full hover:opacity-90 transition-opacity cursor-pointer">
                 Start a Project
-              </button>
+              </button> */}
+              <ButtonV2 />
             </Link>
           </div>
 
@@ -150,9 +150,10 @@ export default function Header() {
                   className="block"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <button className="w-full py-4 bg-[#7E9CFC] text-white font-medium text-lg rounded-md">
+                  {/* <button className="w-full py-4 bg-[#7E9CFC] text-white font-medium text-lg rounded-md">
                     Start a Project
-                  </button>
+                  </button> */}
+                  <ButtonV2 />
                 </Link>
               </div>
             </nav>
