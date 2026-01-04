@@ -114,7 +114,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
       </section>
 
       {/* Challenge & Solution */}
-      <Section background="surface">
+      <Section background="white">
         <div className="grid md:grid-cols-2 gap-12">
           <ScrollReveal>
             <div className="bg-[#FAFAFC] rounded-2xl p-8">
@@ -169,7 +169,7 @@ export default function ProjectDetail({ project }: { project: Project }) {
       </Section>
 
       {/* Technologies */}
-      <Section background="surface">
+      <Section background="white">
         <ScrollReveal>
           <div className="text-center mb-12">
             <span className="inline-block px-4 py-1.5 bg-[#E0D9FF]/50 rounded-md text-sm font-medium text-primary mb-4">

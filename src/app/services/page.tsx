@@ -175,7 +175,7 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <Section background="surface">
+      <Section background="white">
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service, index) => (
             <ScrollReveal key={service.id} delay={index * 0.1}>
@@ -258,7 +258,7 @@ export default function ServicesPage() {
       </Section>
 
       {/* Technologies Section */}
-      <Section background="surface">
+      <Section background="white">
         <ScrollReveal>
           <div className="text-center mb-16">
             <span className="inline-block px-4 py-1.5 bg-[#E0D9FF]/50 rounded-md text-sm font-medium text-primary mb-4">

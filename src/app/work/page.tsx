@@ -123,7 +123,7 @@ export default function WorkPage() {
       </section>
 
       {/* Filter & Projects */}
-      <Section background="surface">
+      <Section background="white">
         {/* Category Filter */}
         <ScrollReveal>
           <div className="flex flex-wrap justify-center gap-3 mb-12">
@@ -131,11 +131,10 @@ export default function WorkPage() {
               <motion.button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-5 py-2.5 rounded-md text-sm font-medium transition-all ${
-                  activeCategory === category
+                className={`px-5 py-2.5 rounded-md text-sm font-medium transition-all ${activeCategory === category
                     ? "bg-primary text-white shadow-[0_4px_20px_rgba(59,40,204,0.3)]"
                     : "bg-[#E0D9FF]/30 text-[#64648c] hover:bg-[#E0D9FF]/50"
-                }`}
+                  }`}
                 whileHover={{ scale: 1.02 }}
                 whileTap={{ scale: 0.98 }}
               >

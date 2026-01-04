@@ -109,7 +109,7 @@ export default function ContactPage() {
       </section>
 
       {/* Contact Info Cards */}
-      <Section background="surface">
+      <Section background="white">
         <div className="grid md:grid-cols-3 gap-6 mb-16">
           {contactInfo.map((info, index) => (
             <ScrollReveal key={info.title} delay={index * 0.1}>
@@ -178,11 +178,10 @@ export default function ContactPage() {
                             {...register("name")}
                             type="text"
                             placeholder="John Doe"
-                            className={`w-full px-4 py-3 rounded-xl border ${
-                              errors.name
+                            className={`w-full px-4 py-3 rounded-xl border ${errors.name
                                 ? "border-red-400"
                                 : "border-[#E0D9FF]/50"
-                            } bg-[#FAFAFC] focus:outline-none focus:border-primary transition-colors`}
+                              } bg-[#FAFAFC] focus:outline-none focus:border-primary transition-colors`}
                           />
                           {errors.name && (
                             <p className="mt-1 text-sm text-red-500">
@@ -198,11 +197,10 @@ export default function ContactPage() {
                             {...register("email")}
                             type="email"
                             placeholder="john@company.com"
-                            className={`w-full px-4 py-3 rounded-xl border ${
-                              errors.email
+                            className={`w-full px-4 py-3 rounded-xl border ${errors.email
                                 ? "border-red-400"
                                 : "border-[#E0D9FF]/50"
-                            } bg-[#FAFAFC] focus:outline-none focus:border-primary transition-colors`}
+                              } bg-[#FAFAFC] focus:outline-none focus:border-primary transition-colors`}
                           />
                           {errors.email && (
                             <p className="mt-1 text-sm text-red-500">
@@ -249,11 +247,10 @@ export default function ContactPage() {
                           {...register("message")}
                           placeholder="Tell us about your project..."
                           rows={5}
-                          className={`w-full px-4 py-3 rounded-xl border ${
-                            errors.message
+                          className={`w-full px-4 py-3 rounded-xl border ${errors.message
                               ? "border-red-400"
                               : "border-[#E0D9FF]/50"
-                          } bg-[#FAFAFC] focus:outline-none focus:border-primary transition-colors resize-none`}
+                            } bg-[#FAFAFC] focus:outline-none focus:border-primary transition-colors resize-none`}
                         />
                         {errors.message && (
                           <p className="mt-1 text-sm text-red-500">
