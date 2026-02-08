@@ -56,6 +56,12 @@ h6 {
   line-height: 1.2;
   color: var(--dark);
 }
+h4{
+  font-family: var(--font-jakarta), "Plus Jakarta Sans", system-ui, sans-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--primary);
+}
 
 ::selection {
   background: var(--primary);
